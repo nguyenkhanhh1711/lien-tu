@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liên từ · Conjunctions</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;0,900;1,800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fcf8f1;--t:#22a58e;--t2:#58cdb5;--td:#12695a;--ink:#24443f;--mut:#7fa39b;--card:rgba(255,255,255,.78);--bd:rgba(34,165,142,.18);--ok:#1f9d55;--okb:#e2f6ea;--no:#d9435c;--nob:#fde8ec;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}html,body{margin:0}html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',system-ui,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:120px}
+#wv{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+#wv g{animation:fw 14s ease-in-out infinite alternate;transform-origin:center}
+#wv g+g{animation-duration:19s;animation-direction:alternate-reverse}
+@keyframes fw{to{transform:translate(-18px,22px) scale(1.04)}}
+.pn{padding:60px 18px 40px;position:relative}.in{max-width:720px;margin:auto}
+.cap{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--t);font-weight:600}
+.ttl{font-family:'Playfair Display',serif;font-weight:900;color:var(--t);line-height:1;margin:6px 0 14px;font-size:clamp(38px,10vw,72px);letter-spacing:-1px}
+.ttl i{font-weight:800;color:var(--td)}
+h3{font-family:'Playfair Display',serif;font-weight:800;color:var(--td);font-size:22px;margin:4px 0 10px}
+p{line-height:1.7;margin:8px 0}
+.rv{opacity:0;transform:translateY(26px);transition:.85s cubic-bezier(.2,.8,.2,1)}.rv.v{opacity:1;transform:none}
+.card{background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:24px;padding:20px;margin:14px 0;box-shadow:0 10px 30px rgba(34,165,142,.1)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+th{text-align:left;color:var(--t);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:6px}
+td{padding:9px 6px;border-top:1px solid var(--bd);vertical-align:top}td b{color:var(--td)}
+.tag{display:inline-block;background:var(--t);color:#fff;font-weight:600;border-radius:99px;padding:3px 12px;font-size:13px;margin:2px}
+.tag.l{background:rgba(34,165,142,.14);color:var(--td)}
+.ex{border-left:3px solid var(--t2);padding:3px 12px;margin:8px 0;font-size:15px}.ex span{color:var(--mut);font-size:13px}
+.warn{background:rgba(88,205,181,.18);border-radius:14px;padding:10px 14px;font-size:14px;margin:10px 0;line-height:1.6}
+.bad{color:var(--no);font-weight:600}.good{color:var(--ok);font-weight:600}
+.k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.qt{font-weight:600;margin:6px 0 8px;line-height:1.5}
+.opt{display:block;width:100%;text-align:left;padding:11px 14px;margin:6px 0;border-radius:14px;border:1.5px solid var(--bd);background:#fff;color:var(--ink);font:500 15px 'Be Vietnam Pro',system-ui,sans-serif;line-height:1.45;cursor:pointer;transition:.2s}
+.opt:hover:not([disabled]){border-color:var(--t);transform:translateX(4px)}.opt b{color:var(--t);margin-right:8px}
+.opt.ok{background:var(--okb);border-color:var(--ok)}.opt.no{background:var(--nob);border-color:var(--no);animation:sh .35s}.opt.dim{opacity:.55}.opt[disabled]{cursor:default}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.exp{margin-top:8px;padding:10px 13px;border-radius:14px;background:var(--okb);font-size:14px;line-height:1.6;animation:up .35s both}.exp.bd{background:var(--nob)}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+.sc{position:sticky;top:calc(8px + env(safe-area-inset-top,0px));z-index:6;text-align:center;margin-bottom:6px}
+.sc span{display:inline-block;background:rgba(255,255,255,.92);padding:8px 18px;border-radius:99px;font-weight:600;font-size:14px;color:var(--td);box-shadow:0 6px 20px rgba(34,165,142,.22)}
+.btn{border:1px solid var(--bd);background:#fff;color:var(--ink);font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:9px 16px;border-radius:99px;cursor:pointer;box-shadow:0 2px 10px rgba(34,165,142,.12)}.btn.p{background:var(--t);color:#fff;border-color:var(--t)}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));display:flex;gap:3px;padding:7px;border-radius:26px;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--bd);box-shadow:0 12px 36px rgba(34,165,142,.3);z-index:20;max-width:96vw}
+nav button{display:flex;align-items:center;gap:6px;border:1.5px solid transparent;background:none;color:var(--ink);font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:10px 12px;border-radius:18px;cursor:pointer;transition:.35s}
+nav button span{max-width:0;overflow:hidden;white-space:nowrap;transition:.35s}
+nav button.on{background:#fff;border-color:var(--t2);color:var(--t);box-shadow:0 2px 10px rgba(34,165,142,.3)}nav button.on span{max-width:90px}
+</style></head><body>
+<svg id="wv" viewBox="0 0 400 800" preserveAspectRatio="none"><g id="w1" fill="none" stroke="#22a58e" stroke-width=".7" opacity=".4"></g><g id="w2" fill="none" stroke="#22a58e" stroke-width=".7" opacity=".28"></g></svg>
+
+<section class="pn" id="s0" data-n="s1" style="min-height:90vh;display:flex;align-items:center"><div class="in" style="text-align:center">
+<div class="cap rv">Chuyên đề ngữ pháp</div>
+<h1 class="ttl rv" style="font-size:clamp(46px,14vw,96px);transition-delay:.15s">Con&shy;junc&shy;tions<br><i>Liên từ</i></h1>
+<p class="rv" style="transition-delay:.3s;color:var(--mut)">Bản chất · Phân loại · Cấu trúc nối câu · Bài tập thực chiến</p>
+<div class="cap rv" style="margin-top:36px;transition-delay:.45s">Lướt xuống để bắt đầu ↓</div></div></section>
+
+<section class="pn" id="s1" data-n="s1"><div class="in">
+<div class="cap rv">Phần 1</div><h2 class="ttl rv">Bản chất &amp; vai trò</h2>
+<div class="card rv"><h3>Liên từ là gì? Tại sao cần dùng?</h3>
+<p>Liên từ (Conjunctions) là những từ dùng để <b>NỐI</b> (liên kết) các từ, cụm từ, hoặc các mệnh đề lại với nhau.</p>
+<p>Nếu không có liên từ, chúng ta chỉ nói được những câu đơn ngắn, rời rạc như rô-bốt. Liên từ giúp tạo câu ghép, câu phức dài hơn, thể hiện rõ quan hệ <b>nguyên nhân, kết quả, tương phản…</b> khiến bài viết và lời nói mạch lạc, logic hơn.</p>
+<div class="ex"><span>Không dùng liên từ:</span><br>I was sick. I didn’t go to school.</div>
+<div class="ex"><span>Dùng liên từ:</span><br><b>Because</b> I was sick, I didn’t go to school. <span>(Mạch lạc hơn rất nhiều)</span></div></div></div></section>
+
+<section class="pn" id="s2" data-n="s1"><div class="in">
+<div class="cap rv">Phần 2 · Loại 1</div><h2 class="ttl rv">Liên từ kết hợp</h2>
+<div class="card rv"><p>Nối từ, cụm từ hoặc mệnh đề <b>CÓ TỪ LOẠI / CẤU TRÚC TƯƠNG ĐƯƠNG</b> (N–N, Adj–Adj, mệnh đề độc lập–mệnh đề độc lập). Nhớ quy tắc <b>FANBOYS</b>:</p>
+<table><tr><th>Từ</th><th>Ý nghĩa</th><th>Ví dụ</th></tr>
+<tr><td><b>F</b>or</td><td>Vì (giống Because)</td><td>I drank some water, for I was thirsty.</td></tr>
+<tr><td><b>A</b>nd</td><td>Và (thêm thông tin)</td><td>She is smart and beautiful.</td></tr>
+<tr><td><b>N</b>or</td><td>Cũng không</td><td>He doesn’t eat meat, nor does he eat fish. <i>(đảo ngữ sau nor)</i></td></tr>
+<tr><td><b>B</b>ut</td><td>Nhưng (tương phản)</td><td>I like dogs, but my sister likes cats.</td></tr>
+<tr><td><b>O</b>r</td><td>Hoặc (lựa chọn)</td><td>Would you like tea or coffee?</td></tr>
+<tr><td><b>Y</b>et</td><td>Nhưng, tuy nhiên</td><td>The weather was cold, yet we went swimming.</td></tr>
+<tr><td><b>S</b>o</td><td>Nên (kết quả)</td><td>It was raining, so I stayed at home.</td></tr></table>
+<div class="warn"><b>Quy tắc dấu phẩy:</b> khi dùng FANBOYS nối 2 mệnh đề hoàn chỉnh (có S–V riêng), bắt buộc có dấu phẩy trước liên từ. VD: I studied hard<b>,</b> so I passed the test.</div></div>
+<div class="card rv"><div class="k">✏ Mini-test 1 · Liên từ kết hợp</div><div id="m0"></div><div id="m1"></div></div></div></section>
+
+<section class="pn" id="s3" data-n="s1"><div class="in">
+<div class="cap rv">Phần 2 · Loại 2</div><h2 class="ttl rv">Liên từ tương quan</h2>
+<div class="card rv"><p>Luôn đi theo <b>CẶP</b>, nhấn mạnh sự kết hợp hoặc lựa chọn.</p>
+<table><tr><th>Cặp</th><th>Ý nghĩa</th><th>Chia động từ (CỰC QUAN TRỌNG)</th></tr>
+<tr><td><b>Both A and B</b></td><td>Cả A và B</td><td>Luôn chia số <b>NHIỀU</b>. <i>Both Lan and Ba are here.</i></td></tr>
+<tr><td><b>Not only A but also B</b></td><td>Không những A mà còn B</td><td rowspan="3">Chia theo <b>chủ ngữ gần nhất</b> (chủ ngữ B).<br><i>Either you or he is right.</i><br><i>Neither he nor his friends are here.</i></td></tr>
+<tr><td><b>Either A or B</b></td><td>Hoặc A hoặc B</td></tr>
+<tr><td><b>Neither A nor B</b></td><td>Không A cũng không B</td></tr></table></div>
+<div class="card rv"><div class="k">✏ Mini-test 2 · Hòa hợp chủ ngữ – động từ</div><div id="m2"></div><div id="m3"></div></div></div></section>
+
+<section class="pn" id="s4" data-n="s1"><div class="in">
+<div class="cap rv">Phần 2 · Loại 3</div><h2 class="ttl rv">Liên từ phụ thuộc</h2>
+<div class="card rv"><p>Nối <b>mệnh đề phụ</b> với <b>mệnh đề chính</b>. Có nó, câu trở thành mệnh đề phụ thuộc (không đứng một mình được).</p>
+<p><b>Nguyên nhân:</b> <span class="tag">Because</span><span class="tag">Since</span><span class="tag">As</span><span class="tag">Now that</span></p>
+<p><b>Nhượng bộ (Mặc dù):</b> <span class="tag">Although</span><span class="tag">Though</span><span class="tag">Even though</span></p>
+<p><b>Thời gian:</b> <span class="tag l">When (khi)</span><span class="tag l">While (trong khi)</span><span class="tag l">Before (trước khi)</span><span class="tag l">After (sau khi)</span><span class="tag l">Until (cho đến khi)</span><span class="tag l">As soon as (ngay khi)</span></p>
+<p><b>Mục đích (Để mà):</b> <span class="tag">So that</span><span class="tag">In order that</span></p>
+<p><b>Điều kiện:</b> <span class="tag l">If (nếu)</span><span class="tag l">Unless (nếu không/trừ khi)</span><span class="tag l">Provided that / As long as (miễn là)</span></p></div>
+<div class="card rv"><h3>Bẫy đề thi: Mệnh đề vs. Cụm danh từ</h3><p>Phân biệt từ nào đi với <b>MỆNH ĐỀ (S + V)</b>, từ nào đi với <b>CỤM DANH TỪ / V-ing</b>.</p>
+<table><tr><th>Ý nghĩa</th><th>+ Mệnh đề (S+V)</th><th>+ Danh từ / V-ing</th></tr>
+<tr><td><b>Nguyên nhân</b></td><td>Because / Since / As<br><i>Because the rain was heavy…</i></td><td>Because of / Due to / Owing to<br><i>Because of the heavy rain…</i></td></tr>
+<tr><td><b>Nhượng bộ</b></td><td>Although / Even though / Though<br><i>Although she is tired…</i></td><td>Despite / In spite of<br><i>Despite being tired…</i></td></tr></table></div>
+<div class="card rv"><div class="k">✏ Mini-test 3 · Because vs Because of</div><div id="m4"></div><div id="m5"></div></div></div></section>
+
+<section class="pn" id="s5" data-n="s1"><div class="in">
+<div class="cap rv">Phần 2 · Mở rộng</div><h2 class="ttl rv">Trạng từ liên kết</h2>
+<div class="card rv"><p><b>However</b> (Tuy nhiên), <b>Therefore</b> (Vì vậy), <b>Moreover</b> (Hơn nữa), <b>Otherwise</b> (Nếu không thì) mang nghĩa giống liên từ nhưng <b>dấu câu hoàn toàn khác</b>.</p>
+<div class="ex"><span>Liên từ But:</span><br>It was raining<b>, but</b> I went out.</div>
+<div class="ex"><span>Trạng từ However:</span><br>It was raining<b>. However,</b> I went out.<br><span>hoặc</span> It was raining<b>; however,</b> I went out.</div>
+<div class="warn"><span class="bad">✘ Sai:</span> It was raining, however I went out. <span class="mut">(dùng dấu phẩy để nối hai câu độc lập)</span></div></div></div></section>
+
+<section class="pn" id="s6" data-n="s6"><div class="in"><div class="cap rv">Bài tập · Phần 3</div><h2 class="ttl rv">Trắc nghiệm lý thuyết</h2><div class="sc"><span id="sca"></span></div><div id="qa"></div><div style="text-align:center"><button class="btn p" data-rs="a">↺ Làm lại</button></div></div></section>
+<section class="pn" id="s7" data-n="s7"><div class="in"><div class="cap rv">Bài tập · Phần 4</div><h2 class="ttl rv">Trắc nghiệm điền từ</h2><p class="rv">Phân tích nghĩa (nguyên nhân, kết quả, nhượng bộ, điều kiện) và cấu trúc theo sau chỗ trống (mệnh đề hay cụm danh từ).</p><div class="sc"><span id="scb"></span></div><div id="qb"></div><div style="text-align:center"><button class="btn p" data-rs="b">↺ Làm lại</button></div></div></section>
+<section class="pn" id="s8" data-n="s8"><div class="in"><div class="cap rv">Bài tập · Phần 5</div><h2 class="ttl rv">Viết lại câu (ĐGNL)</h2><p class="rv">Chọn câu sát nghĩa nhất với câu gốc. Chú ý bẫy Because / Because of, Although / Despite, đảo ngữ.</p><div class="sc"><span id="scc"></span></div><div id="qc"></div><div style="text-align:center"><button class="btn p" data-rs="c">↺ Làm lại</button></div></div></section>
+
+<nav id="nav"><button data-g="s1" class="on">📖<span>Bài học</span></button><button data-g="s6">①<span>Lý thuyết</span></button><button data-g="s7">②<span>Điền từ</span></button><button data-g="s8">③<span>Viết lại</span></button></nav>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* waves */
+(function(){let a='',b='';for(let i=0;i<22;i++){const o=i*2.2;a+=`<path vector-effect="non-scaling-stroke" d="M${330+o} -20 C ${190+o*2.4} 220, ${420-o*1.5} 420, ${270+o} 830"/>`;b+=`<path vector-effect="non-scaling-stroke" d="M${-20} ${560+i*2.4} C 120 ${430+i*3}, 250 ${760-i*2}, 430 ${600+i*2.6}"/>`}$('#w1').innerHTML=a;$('#w2').innerHTML=b})();
+/* sound */
+let ac;function beep(a){try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();a.forEach(([f,t,d,y])=>{const o=ac.createOscillator(),g=ac.createGain(),n=ac.currentTime+t;o.type=y||'sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,n);g.gain.exponentialRampToValueAtTime(.22,n+.02);g.gain.exponentialRampToValueAtTime(.0001,n+d);o.connect(g);g.connect(ac.destination);o.start(n);o.stop(n+d+.05)})}catch(e){}}
+const ok=()=>beep([[660,0,.15],[880,.12,.3]]),no=()=>beep([[220,0,.2,'sawtooth'],[150,.18,.3,'sawtooth']]);
+const A={},EX={};
+const qb=(id,q,o,a)=>`<div class="qt">${q}</div>`+o.map((t,k)=>`<button class="opt" data-id="${id}" data-k="${k}" data-a="${a}"><b>${'ABCD'[k]}.</b>${t}</button>`).join('')+`<div id="e${id}"></div>`;
+const SC={a:15,b:30,c:20};
+function msc(p){const v=Object.keys(A).filter(k=>k[0]==p).map(k=>A[k]);$('#sc'+p).textContent=`Đã làm ${v.length}/${SC[p]} · Đúng ${v.filter(x=>x).length}`}
+/* mini tests */
+const MT=`I wanted to buy a new phone, ___ I didn’t have enough money.|and|but|so|1|“Muốn mua điện thoại” và “không đủ tiền” đối lập ➤ but (có dấu phẩy trước).
+We can go to the cinema, ___ we can stay at home and watch TV.|or|nor|yet|0|Hai khả năng để lựa chọn ➤ or.
+Not only my sister but also my parents ___ going traveling.|like|likes||0|Not only A but also B chia theo chủ ngữ gần nhất = my parents (số nhiều) ➤ like.
+Both the teacher and the student ___ happy today.|is|are||1|Both … and luôn chia số nhiều ➤ are.
+We cancelled the trip ___ the bad weather.|because|because of||1|Sau chỗ trống là cụm danh từ (the bad weather) ➤ because of.
+___ it was raining heavily, we still went to school.|Although|In spite of||0|Sau chỗ trống là mệnh đề (it was raining) ➤ Although.`.split('\n').map(l=>l.split('|'));
+MT.forEach((p,i)=>{EX['m'+i]=p[5];$('#m'+i).innerHTML=qb('m'+i,`${i%2+1}. ${p[0]}`,p.slice(1,4).filter(Boolean),+p[4])});
+/* Part 3 (15) q|A|B|C|D|note */
+const K3='ADDDC'+'ADDAD'+'DBBAB';
+const P3=`Chức năng chính của liên từ trong câu tiếng Anh là gì?|Nối các từ, cụm từ hoặc mệnh đề|Thay thế cho danh từ|Bổ nghĩa cho động từ|Diễn tả hành động|Liên từ dùng để NỐI từ, cụm từ hoặc mệnh đề.
+Chữ ‘Y’ trong quy tắc FANBOYS đại diện cho liên từ nào?|Yellow|Yours|Yes|Yet|FANBOYS = For, And, Nor, But, Or, Yet, So ➤ Y là Yet.
+Trong nhóm FANBOYS, từ nào mang nghĩa giống với ‘Because’ (Bởi vì)?|And|Nor|So|For|For = vì (giống Because), ví dụ: I drank some water, for I was thirsty.
+Cặp liên từ nào mang ý nghĩa ‘Không những … mà còn’?|Either … or|Neither … nor|Both … and|Not only … but also|Not only A but also B = không những A mà còn B.
+Đối với ‘Neither A nor B’, động từ được chia theo quy tắc nào?|Luôn chia số ít|Chia theo chủ ngữ A|Chia theo chủ ngữ B (chủ ngữ gần nó nhất)|Luôn chia số nhiều|Neither/Either/Not only … chia theo chủ ngữ gần động từ nhất (B).
+Đứng ngay sau ‘Because of’ hoặc ‘Due to’ bắt buộc phải là gì?|Một danh từ, cụm danh từ hoặc V-ing|Một trạng từ|Một tính từ|Một mệnh đề hoàn chỉnh (S + V)|Because of / Due to + N / cụm N / V-ing (không đi với mệnh đề).
+Từ nào KHÔNG thuộc nhóm liên từ phụ thuộc chỉ Thời gian?|While|Until|When|Although|While, Until, When chỉ thời gian; Although chỉ nhượng bộ (mặc dù).
+Cấu trúc câu nào sử dụng SAI dấu câu với trạng từ ‘However’?|It rained; however, we played football.|It rained. We played football, however.|It rained. However, we played football.|It rained, however we played football.|However là trạng từ liên kết, không dùng dấu phẩy để nối 2 câu độc lập. Đúng: “. However,” hoặc “; however,”.
+Từ nào mang nghĩa tương đương ‘Although’ nhưng đi với cụm danh từ / V-ing?|Despite|Since|Because of|Even though|Despite / In spite of + N/V-ing ≈ Although + S + V.
+Từ ‘Unless’ mang ý nghĩa tương đương với cấu trúc nào?|Because|So that|If|If … not|Unless = If … not (nếu không / trừ khi).
+Liên từ nào dùng để chỉ ‘Mục đích’ (để mà)?|Now that|As soon as|Even if|So that|So that / In order that = để mà (mục đích).
+Trong câu ‘I was tired, ___ I went to bed early’, liên từ phù hợp nhất?|or|so|but|for|Mệt ➤ kết quả là đi ngủ sớm ➤ so (nên).
+Cặp ‘Both … and’ yêu cầu động từ chia ở dạng nào?|V-ing|Số nhiều|Số ít|Phụ thuộc vào từ đứng sau ‘and’|Both A and B luôn chia số nhiều.
+‘As long as’ và ‘Provided that’ diễn tả mối quan hệ gì?|Điều kiện (Miễn là)|Nguyên nhân|Nhượng bộ|Thời gian|As long as / Provided that = miễn là ➤ điều kiện.
+Từ nào mang nghĩa ‘Mặt khác, nếu không thì’ và thường đứng sau dấu chấm phẩy (;)?|Therefore|Otherwise|However|Moreover|Otherwise = nếu không thì (; otherwise,).`.split('\n').map(l=>l.split('|'));
+/* Part 4 (30) */
+const K4='CADCC'+'ADCCC'+'DDABB'+'AABAC'+'AABCB'+'BCBDA';
+const P4=`___ he was very tired, he continued to work on his project.|Despite|Because|Although|Since|Although + mệnh đề: mệt nhưng vẫn tiếp tục (nhượng bộ).
+We decided to stay at home ___ the heavy rain.|because of|in spite of|although|because|Sau chỗ trống là cụm danh từ (the heavy rain), chỉ nguyên nhân ➤ because of.
+You can have ___ tea ___ coffee. Which one do you prefer?|not only / but also|neither / nor|both / and|either / or|Chọn một trong hai ➤ either … or.
+I am studying hard ___ I can pass the final exam.|as soon as|in order to|so that|because|so that + S + can ➤ chỉ mục đích (in order to chỉ đi với V nguyên mẫu).
+___ being very rich, he is not happy.|Although|Even though|Despite|Because of|Sau chỗ trống là V-ing ➤ Despite (nhượng bộ).
+I will call you ___ I arrive at the airport.|as soon as|while|so that|until|as soon as = ngay khi.
+Neither Mary nor her friends ___ going to the party tonight.|is|has|was|are|Neither … nor chia theo chủ ngữ gần nhất (her friends, số nhiều) ➤ are.
+You must hurry up; ___, you will miss the train.|however|moreover|otherwise|therefore|otherwise = nếu không thì (không nhanh sẽ lỡ tàu).
+The test was very difficult. ___, all the students passed it.|Because|So|However|Therefore|Hai vế tương phản (khó nhưng đều đậu) ➤ However.
+I like reading books, ___ my brother enjoys playing video games.|or|so|but|for|Hai sở thích đối lập ➤ but.
+She speaks English fluently ___ she has lived in London for 5 years.|because of|therefore|although|because|because + mệnh đề: nói giỏi vì sống ở London 5 năm.
+Not only my parents but also my sister ___ here right now.|were|have|are|is|Chia theo chủ ngữ gần nhất (my sister, số ít) ➤ is.
+We waited ___ the bus arrived.|until|after|when|while|wait until = chờ cho đến khi.
+He didn’t go to school yesterday ___ his illness.|in spite of|due to|because|although|Sau chỗ trống là cụm danh từ (his illness) chỉ nguyên nhân ➤ due to.
+We will go to the beach tomorrow ___ it rains.|if|unless|provided that|because|Đi biển trừ khi trời mưa ➤ unless (= if … not).
+He is ___ smart ___ hardworking. He is the best student.|both / and|either / or|so / that|neither / nor|Vừa thông minh vừa chăm chỉ ➤ both … and.
+The weather was terrible. ___, we decided to cancel the picnic.|Therefore|But|Otherwise|However|Thời tiết xấu ➤ kết quả hủy picnic ➤ Therefore (vì vậy).
+You should take an umbrella ___ it rains.|so that|in case|unless|even though|in case = phòng khi (trời mưa).
+I was watching TV ___ my mother was cooking dinner.|while|as soon as|when|until|Hai hành động diễn ra song song ➤ while.
+I will lend you my car ___ you promise to drive carefully.|although|unless|as long as|because of|as long as = miễn là (điều kiện).
+___ I had locked the door, I realized I left my keys inside.|After|While|Until|Before|After + quá khứ hoàn thành: sau khi khóa cửa mới nhận ra.
+She is learning Korean ___ she can watch dramas without subtitles.|so that|in order to|because of|despite|so that + S + can (mục đích, có mệnh đề).
+He didn’t study hard; ___, he failed the exam.|however|consequently|moreover|otherwise|Học không chăm ➤ kết quả trượt ➤ consequently (do đó).
+They went out for a walk ___ the cold weather.|even though|although|in spite of|because of|Sau chỗ trống là cụm danh từ, nghĩa nhượng bộ ➤ in spite of.
+You can’t enter this room ___ you have a VIP pass.|because|unless|as long as|if|unless = nếu không (trừ khi có thẻ VIP).
+The flight was delayed ___ a technical problem.|as|owing to|because|since|Sau chỗ trống là cụm danh từ ➤ owing to (= due to).
+I won’t forgive him ___ he apologizes to me.|while|when|until|after|won’t … until = chưa tha thứ cho đến khi xin lỗi.
+Both the teacher and the students ___ exhausted after the trip.|has been|are|was|is|Both … and chia số nhiều ➤ are.
+He worked very hard. ___, he didn’t get the promotion.|Because|Therefore|So|However|Chăm chỉ nhưng không được thăng chức ➤ However.
+We left early ___ avoid the traffic jam.|in order to|so that|for|because|Sau chỗ trống là V nguyên mẫu ➤ in order to.`.split('\n').map(l=>l.split('|'));
+/* Part 5 (20) */
+const K5='BBABA'+'CDDDB'+'ABDCD'+'BDDDB';
+const P5=`Because the weather was incredibly terrible, the organizing committee decided to cancel the outdoor music festival.|Due to the weather was incredibly terrible, the organizing committee decided to cancel the outdoor music festival.|Because of the incredibly terrible weather, the organizing committee decided to cancel the outdoor music festival.|The organizing committee decided to cancel the outdoor music festival although the weather was incredibly terrible.|Despite the incredibly terrible weather, the organizing committee decided to cancel the outdoor music festival.|Because + mệnh đề ➤ Because of + cụm danh từ. A sai vì Due to + mệnh đề; C, D đổi nghĩa thành tương phản.
+Although she lacks formal experience in marketing, she was offered the managerial position.|She lacks formal experience in marketing, so she was offered the managerial position.|Despite her lack of formal experience in marketing, she was offered the managerial position.|Because of her lack of formal experience in marketing, she was offered the managerial position.|In spite of she lacks formal experience in marketing, she was offered the managerial position.|Although + mệnh đề ➤ Despite + cụm danh từ (her lack of …). D sai vì In spite of + mệnh đề.
+If the company does not improve its customer service, it will lose a lot of loyal clients.|Unless the company improves its customer service, it will lose a lot of loyal clients.|If the company improves its customer service, it will lose a lot of loyal clients.|Unless the company does not improve its customer service, it will lose a lot of loyal clients.|Provided that the company improves its customer service, it will lose a lot of loyal clients.|If … not ➤ Unless + mệnh đề khẳng định. C sai vì Unless đã mang nghĩa phủ định.
+The presentation was so lengthy and tedious that many attendees started falling asleep.|The presentation was very lengthy and tedious, however many attendees started falling asleep.|It was such a lengthy and tedious presentation that many attendees started falling asleep.|It was so a lengthy and tedious presentation that many attendees started falling asleep.|The presentation was too lengthy and tedious for attendees falling asleep.|So + adj + that ➤ Such + (a/an) + adj + N + that. C sai vì “so a”.
+She studies English diligently every day so that she can get a scholarship to study abroad.|She studies English diligently every day so as to get a scholarship to study abroad.|Because she studies English diligently every day, she can get a scholarship to study abroad.|She studies English diligently every day in order that get a scholarship to study abroad.|She studies English diligently every day in order to getting a scholarship to study abroad.|So that ➤ in order to / so as to + V nguyên thể. C thiếu chủ ngữ, D sai “to getting”.
+He was profoundly exhausted after the long flight; however, he attended the urgent meeting immediately.|He was profoundly exhausted after the long flight, so he attended the urgent meeting immediately.|Because he was profoundly exhausted after the long flight, he attended the urgent meeting immediately.|Despite his profound exhaustion after the long flight, he attended the urgent meeting immediately.|Although being profoundly exhausted after the long flight, he attended the urgent meeting immediately.|However (tương phản) ➤ Despite + cụm danh từ. A, B sai nghĩa (quan hệ kết quả/nguyên nhân).
+Not only does the new software increase productivity, but it also reduces operational costs significantly.|Either the new software increases productivity or it reduces operational costs significantly.|The new software increases productivity but it does not reduce operational costs.|Neither does the new software increase productivity nor does it reduce operational costs.|The new software both increases productivity and reduces operational costs significantly.|Not only … but also ≈ Both … and (thêm thông tin, cùng chiều).
+You must wear a helmet when riding a motorcycle, or you will be fined heavily.|Unless you wear a helmet when riding a motorcycle, you won’t be fined heavily.|Provided that you wear a helmet when riding a motorcycle, you will be fined heavily.|You must wear a helmet when riding a motorcycle so that you will be fined heavily.|If you don’t wear a helmet when riding a motorcycle, you will be fined heavily.|“…or you will…” ➤ If you don’t …, you will … (nếu không đội mũ thì bị phạt).
+The traffic was exceptionally heavy; therefore, we missed the beginning of the conference.|Because the traffic was exceptionally heavy, so we missed the beginning of the conference.|Despite the exceptionally heavy traffic, we missed the beginning of the conference.|We missed the beginning of the conference however the traffic was exceptionally heavy.|Because of the exceptionally heavy traffic, we missed the beginning of the conference.|Therefore ➤ Because of + cụm danh từ chỉ nguyên nhân. A thừa “so”, B tương phản.
+The manager rejected the proposal because it was completely impractical and too costly.|The proposal was completely impractical and too costly; however, the manager rejected it.|The manager rejected the proposal due to its complete impracticality and high cost.|Although the proposal was completely impractical and too costly, the manager rejected it.|The manager rejected the proposal because of it was completely impractical and too costly.|Because + mệnh đề ➤ due to + cụm danh từ (its complete impracticality …). D sai vì because of + mệnh đề.
+As soon as the famous singer stepped onto the stage, the audience started cheering wildly.|No sooner had the famous singer stepped onto the stage than the audience started cheering wildly.|As soon as the famous singer stepped onto the stage than the audience started cheering wildly.|No sooner the famous singer stepped onto the stage than the audience started cheering wildly.|Hardly had the famous singer stepped onto the stage than the audience started cheering wildly.|As soon as ➤ No sooner + had + S + V3 + than + S + V2. D sai vì Hardly đi với when.
+They decided to buy the old house in spite of its terrible condition and high price.|They decided to buy the old house because its condition was terrible and its price was high.|Even though the condition of the house was terrible and its price was high, they decided to buy it.|Despite the house was in terrible condition and its price was high, they decided to buy it.|The condition of the house was terrible and its price was high; therefore, they decided to buy it.|In spite of + cụm N ➤ Even though + mệnh đề (cùng nghĩa nhượng bộ). C sai vì Despite + mệnh đề.
+He didn’t bring his umbrella, so he got completely soaked in the sudden rainstorm.|He got completely soaked in the sudden rainstorm because of he didn’t bring his umbrella.|If he didn’t bring his umbrella, he got completely soaked in the sudden rainstorm.|Although he got completely soaked in the sudden rainstorm, he didn’t bring his umbrella.|Because he didn’t bring his umbrella, he got completely soaked in the sudden rainstorm.|So (kết quả) ➤ Because đứng đầu câu chỉ nguyên nhân. A sai vì because of + mệnh đề.
+She locked the safe securely so that nobody could steal the confidential documents.|Because she locked the safe securely, nobody could steal the confidential documents.|She locked the safe securely so as to steal the confidential documents.|She locked the safe securely to prevent anyone from stealing the confidential documents.|She locked the safe securely in order to nobody could steal the confidential documents.|So that nobody could steal ➤ to prevent anyone from stealing (ngăn chặn).
+We will go on a picnic tomorrow provided that the weather is favorable.|We will go on a picnic tomorrow because the weather is favorable.|We will go on a picnic tomorrow unless the weather is favorable.|We will go on a picnic tomorrow even if the weather is favorable.|We will go on a picnic tomorrow if the weather is favorable.|Provided that ≈ If (miễn là / nếu).
+I left early in order not to get stuck in the rush-hour traffic.|I left early so as not to getting stuck in the rush-hour traffic.|I left early so that I wouldn’t get stuck in the rush-hour traffic.|Because I didn’t want to get stuck in the rush-hour traffic, so I left early.|I left early so that I won’t get stuck in the rush-hour traffic.|in order not to ➤ so that + S + wouldn’t + V (quá khứ ➤ wouldn’t). A sai “not to getting”, C thừa “so”, D sai thì.
+Neither the principal nor the teachers were aware of the incident that happened yesterday.|Not only the principal but also the teachers were aware of the incident.|Either the principal or the teachers were aware of the incident that happened yesterday.|Both the principal and the teachers were aware of the incident that happened yesterday.|The principal wasn’t aware of the incident, and the teachers weren’t either.|Neither … nor = cả hai đều không biết ➤ D (hiệu ứng phủ định cho cả hai).
+Despite having a headache, Mary still tried to finish her assignment before midnight.|Because she had a headache, Mary still tried to finish her assignment before midnight.|Mary had a headache; therefore, she still tried to finish her assignment before midnight.|Although having a headache, Mary still tried to finish her assignment before midnight.|Even though she had a headache, Mary still tried to finish her assignment before midnight.|Despite + V-ing ≈ Even though + S + V (nhượng bộ). A, B sai quan hệ nguyên nhân/kết quả; C không tự nhiên bằng D. (Đáp án do mình bổ sung vì file gốc thiếu.)
+You should bring a map with you in case you get lost in the deep forest.|You should bring a map with you because you will get lost in the deep forest.|You should bring a map with you to get lost in the deep forest.|You should bring a map with you if you don’t get lost in the deep forest.|You should bring a map with you because it is possible that you will get lost in the deep forest.|in case = phòng khi, vì có khả năng bị lạc ➤ D. A khẳng định chắc chắn sẽ lạc. (Đáp án do mình bổ sung vì file gốc thiếu.)
+He didn’t study hard. Consequently, he didn’t pass the final entrance examination.|Because of he didn’t study hard, he didn’t pass the final entrance examination.|He didn’t pass the final entrance examination because he didn’t study hard.|Although he didn’t study hard, he passed the final entrance examination.|He didn’t study hard, but he didn’t pass the final entrance examination.|Consequently (do đó) ➤ because + mệnh đề chỉ nguyên nhân. A sai because of + mệnh đề. (Đáp án do mình bổ sung vì file gốc thiếu.)`.split('\n').map(l=>l.split('|'));
+const DATA={a:[P3,K3,0],b:[P4,K4,16],c:[P5,K5,46]};
+function rend(p){Object.keys(A).filter(k=>k[0]==p).forEach(k=>delete A[k]);const[d,K,st]=DATA[p],n=p=='a'?15:p=='b'?30:20,off=p=='a'?1:st;$('#q'+p).innerHTML=d.map((q,i)=>{EX[p+i]=q[5];return`<div class="card"><div class="k">Câu ${i+(p=='a'?1:st)}</div>${qb(p+i,`${i+(p=='a'?1:st)}. ${q[0]}`,q.slice(1,5),'ABCD'.indexOf(K[i]))}</div>`}).join('');msc(p)}
+['a','b','c'].forEach(rend);
+document.addEventListener('click',e=>{let b;
+if(b=e.target.closest('.opt')){const id=b.dataset.id,k=+b.dataset.k,a=+b.dataset.a;if(A[id]!==undefined)return;A[id]=k==a?1:0;(k==a?ok:no)();$$(`.opt[data-id="${id}"]`).forEach((x,i)=>{x.disabled=true;x.classList.add(i==a?'ok':i==k?'no':'dim')});$('#e'+id).innerHTML=`<div class="exp ${k==a?'':'bd'}">${k==a?'✅ Chính xác!':'❌ Chưa đúng.'} Đáp án: <b>${'ABCD'[a]}</b>.<br>${EX[id]}</div>`;if(SC[id[0]])msc(id[0]);return}
+if(b=e.target.closest('[data-rs]')){rend(b.dataset.rs);return}
+if(b=e.target.closest('#nav button')){const s=$('#'+b.dataset.g);if(s)s.scrollIntoView({behavior:'smooth'})}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}}),{threshold:.1});$$('.rv').forEach(x=>io.observe(x));
+const io2=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.g==x.target.dataset.n))}),{rootMargin:'-45% 0px -50% 0px'});$$('section[data-n]').forEach(s=>io2.observe(s));
+</script>
+</body></html>
